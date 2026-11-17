@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STORMKEEPER — steer the rain, save the harvest</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0e2233; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas {
+    display: block;
+    width: min(1280px, 100vw);
+    height: auto;
+    aspect-ratio: 1280 / 720;
+    background: #7ec8ee;
+    cursor: grab;
+    touch-action: none;
+  }
+  canvas:active { cursor: grabbing; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
